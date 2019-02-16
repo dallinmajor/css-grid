@@ -13,19 +13,137 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="">
+    <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/devicons.css">
     <style>
+        body {
+            margin: 0;
+        }
+
         nav {
             display: grid;
-            grid-template-columns: 2fr 4fr;
+            grid-template-columns: 3fr 2fr;
+            color: white;
+            background-color: gray;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            padding-left: 50px;
+        }
+
+        li {
+            list-style-type: none;
         }
 
         nav>ul {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
+            text-align: center;
         }
 
         nav>ul>li {
-            display: block;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: normal;
+            padding-top: 10px;
+        }
+
+        nav>ul>li:hover {
+            color: yellow;
+        }
+
+        section {
+            margin: auto;
+        }
+
+        span {
+            padding: 20px;
+            grid-column: 1/3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section-2 {
+            background-color: #E0E0E0;
+        }
+
+        .section-1,
+        .section-3 {
+            background-color: #F0F0F0;
+        }
+
+        h2 {
+            margin: 0;
+            width: 100%;
+            text-align: center;
+            padding-bottom: 100px;
+            font-size: 40px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 1em;
+        }
+
+        .skills-grid,
+        .project-grid {
+            width: 1150px;
+            margin: auto;
+        }
+
+        .skills-grid>li {
+            width: 210px;
+            padding-top: 60px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 370px);
+            grid-gap: 40px;
+        }
+
+        section {
+            padding: 100px;
+        }
+
+        .project {
+            background-color: white;
+            width: 350px;
+            height: 350px;
+            border: 10px solid black;
+        }
+
+        .btn {
+            padding: 10px 10px;
+            text-transform: uppercase;
+        }
+
+        footer {
+            text-align: center;
+            width: 100%;
+            padding: 40px;
+        }
+
+        .contact-me {
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+
+        .contact-me>input {
+            padding: 10px;
+        }
+
+        .message {
+            grid-row: 1/4;
+            grid-column: 2/3;
         }
     </style>
 </head>
@@ -36,64 +154,83 @@
         <ul>
             <li>Skills</li>
             <li>Portfolio</li>
-            <li>Blog</li>
             <li>About</li>
+            <li>Contact</li>
         </ul>
     </nav>
     <header>
-
+        <h2>Dallin Major</h2>
+        <h2>Full-Stack Web Developer</h2>
     </header>
-    <section>
+    <section class="section-1">
         <h2>Skills</h2>
-        <ul>
-            <li>React</li>
-            <li>Redux</li>
-            <li>CSS</li>
-            <li>HTML</li>
-            <li>Javascript</li>
-            <li>jQuery</li>
-            <li>Bootstrap</li>
-            <li>CSSgrid</li>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>Handlebars</li>
-            <li>Cheerios</li>
-            <li>MySQL</li>
-            <li>MongoDB</li>
-            <li>Sequelize</li>
-            <li>Firebase</li>
-            <li>Mongoose</li>
-            <li>Git</li>
-            <li>Heroku</li>
+        <ul class="skills-grid">
+            <li>
+                <span class="devicons devicons-html5"></span>
+                <h6>Html</h6>
+            </li>
+            <li>
+                <span class="devicons devicons-css3"></span>
+                <h6>Css, flex-box, grid</h6>
+            </li>
+            <li>
+                <span class=""></span>
+                <h6>JavaScript</h6>
+            </li>
+            <li>
+                <span class=""></span>
+                <h6>jQuery</h6>
+            </li>
+            <li>
+                <span class=""></span>
+                <h6>Express</h6>
+            </li>
+            <li>
+                <span class=""></span>
+                <h6>Handlebars</h6>
+            </li>
+            <li>
+                    <span class=""></span>
+                    <h6>MySQL</h6>
+            </li>
+            <li>
+                    <span class=""></span>
+                    <h6>MongoDB</h6>
+            </li>
+            <li>
+                    <span class=""></span>
+                    <h6>Firebase</h6>
+            </li>
+            <li>
+                    <span class=""></span>
+                    <h6>Bootsrap</h6>
+            </li>
+            <li>
+                    <span class=""></span>
+                    <h6>Git</h6>
+            </li>
+            <li>
+                    <span class=""></span>
+                    <h6>Heroku</h6>
+            </li>
         </ul>
     </section>
-    <section>
+    <section class="section-2">
         <h2>Portfolio</h2>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
+        <div class="project-grid">
+            <div class="project">project</div>
+            <div class="project">project</div>
+            <div class="project">project</div>
+            <div class="project">project</div>
+            <div class="project">project</div>
+            <div class="project">project</div>
+            <div class="project">project</div>
+            <div class="project">project</div>
+            <div class="project">project</div>
+            <div class="project">project</div>
+        </div>
     </section>
-    <section>
-        <h2>Tech Blog</h2>
-        <div class="blog-posts"></div>
-        <div class="blog-posts"></div>
-        <div class="blog-posts"></div>
-        <div class="blog-posts"></div>
-        <div class="blog-posts"></div>
-        <div class="blog-posts"></div>
-        <div class="blog-posts"></div>
-        <div class="blog-posts"></div>
-        <div class="blog-posts"></div>
-        <div class="blog-posts"></div>
-    </section>
-    <section>
+    <section class="section-3">
         <h2>About Me</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, beatae? Non officia natus expedita
             necessitatibus quod reprehenderit odio, repudiandae ipsam iure nobis, eaque impedit mollitia earum, velit
@@ -105,6 +242,19 @@
             voluptates nemo?
         </p>
     </section>
+    <section class="section-4">
+        <h2>Contact Me</h2>
+        <form class="contact-me">
+            <input placeholder="Name" type="text">
+            <input placeholder="Email" type="text">
+            <input placeholder="Phone" type="text">
+            <textarea placeholder="Message" class="message" name="" id="" cols="30" rows="10"></textarea>
+            <span>
+                <button class="btn">Message me</button>
+            </span>
+        </form>
+    </section>
+    <footer>Dallin Major copyright 2018</footer>
     <script src="" async defer></script>
 </body>
 
