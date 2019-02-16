@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/reset.css">
+        <style>
+            body {
+                height: 100%;
+                bottom: 0;
+            }
+
+            .grid{
+                display: grid;
+                grid-template-columns:repeat(12, 1fr);
+                grid-template-rows:repeat(12, 1fr);
+                grid-gap: 1em;
+            }
+
+            .grid > nav {
+                grid-column:1/13;
+                background: #ddd;
+            }
+
+            .grid > aside {
+                grid-column: 1/5;
+                grid-row:2/12;
+                background: #eee;
+            }
+
+            .grid > section {
+                background: lightblue;
+                grid-column: 5/13;
+                grid-row: 2/12;
+            }
+
+            .grid > footer {
+                grid-column: 1/13;
+                background: pink;
+                height: 4em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+            <nav> </nav>
+            <aside>
+                
+            </aside>
+            <section>
+                
+            </section>
+            <footer>
+                
+            </footer>
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>
