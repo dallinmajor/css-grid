@@ -32,8 +32,16 @@
             padding-left: 50px;
         }
 
+        h4 {
+            text-align: center;
+        }
+
         li {
             list-style-type: none;
+        }
+
+        article {
+            padding: 20px;
         }
 
         nav>ul {
@@ -84,7 +92,7 @@
 
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             grid-gap: 1em;
         }
 
@@ -111,7 +119,17 @@
             padding: 100px;
         }
 
+        .filter-box {
+            width: 100%;
+            height: 50px;
+        }
+
+        .filter {
+            float: right;
+        }
+
         .project {
+            margin: auto;
             background-color: white;
             width: 350px;
             height: 350px;
@@ -145,6 +163,11 @@
             grid-row: 1/4;
             grid-column: 2/3;
         }
+
+        .about-me {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
     </style>
 </head>
 
@@ -174,49 +197,55 @@
                 <h6>Css, flex-box, grid</h6>
             </li>
             <li>
-                <span class=""></span>
+                <span class="devicons devicons-javascript"></span>
                 <h6>JavaScript</h6>
             </li>
             <li>
-                <span class=""></span>
-                <h6>jQuery</h6>
+                <span class="devicons devicons-bootstrap"></span>
+                <h6>Bootstrap</h6>
             </li>
             <li>
-                <span class=""></span>
+                <span class="devicons devicons-mongodb"></span>
+                <h6>MongoDB</h6>
+            </li>
+            <li>
+                <span class="devicons devicons-terminal"></span>
                 <h6>Express</h6>
             </li>
             <li>
-                <span class=""></span>
-                <h6>Handlebars</h6>
+                <span class="devicons devicons-react"></span>
+                <h6>React/Redux</h6>
             </li>
             <li>
-                    <span class=""></span>
-                    <h6>MySQL</h6>
+                <span class="devicons devicons-nodejs"></span>
+                <h6>Node</h6>
             </li>
             <li>
-                    <span class=""></span>
-                    <h6>MongoDB</h6>
+                <span class="devicons devicons-mysql"></span>
+                <h6>MySQL</h6>
+            </li>
+
+            <li>
+                <span class="devicons devicons-jquery"></span>
+                <h6>jQuery</h6>
+            </li>
+
+
+            <li>
+                <span class="devicons devicons-git"></span>
+                <h6>Git</h6>
             </li>
             <li>
-                    <span class=""></span>
-                    <h6>Firebase</h6>
-            </li>
-            <li>
-                    <span class=""></span>
-                    <h6>Bootsrap</h6>
-            </li>
-            <li>
-                    <span class=""></span>
-                    <h6>Git</h6>
-            </li>
-            <li>
-                    <span class=""></span>
-                    <h6>Heroku</h6>
+                <span class="devicons devicons-heroku"></span>
+                <h6>Heroku</h6>
             </li>
         </ul>
     </section>
     <section class="section-2">
         <h2>Portfolio</h2>
+        <div class="filter-box">
+            <div class="filter">filter</div>
+        </div>
         <div class="project-grid">
             <div class="project">project</div>
             <div class="project">project</div>
@@ -232,15 +261,16 @@
     </section>
     <section class="section-3">
         <h2>About Me</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, beatae? Non officia natus expedita
-            necessitatibus quod reprehenderit odio, repudiandae ipsam iure nobis, eaque impedit mollitia earum, velit
-            sequi officiis aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem excepturi, error
-            consequatur aspernatur laborum corporis aperiam, facilis alias debitis deserunt perferendis quae. Enim
-            maiores iste quasi. Amet dolorum iure dolorem!
-            <br /> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod veniam, doloribus in molestiae modi
-            natus mollitia odit deleniti eos ea dolore iure assumenda, laboriosam repellendus ullam laudantium! Nostrum,
-            voluptates nemo?
-        </p>
+       <div class="about-me">
+           <article>
+                <h4>Personal and Family</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error beatae, dolorem cumque accusamus assumenda, fuga consectetur culpa iusto pariatur voluptates, rerum consequatur? Sequi quae et, nemo consequuntur accusantium vel, animi nam, expedita ipsa a doloremque in perferendis quisquam saepe magnam? Delectus necessitatibus dolore nihil odit cumque suscipit aspernatur ea ipsa quisquam facere, soluta numquam aperiam nemo est adipisci in vitae praesentium consequatur natus. Provident, perferendis obcaecati velit consequuntur saepe quibusdam sint repellat praesentium aut ex dicta nostrum nihil vero sapiente eligendi eum quidem est. Quos ratione similique voluptate nam! Quas quibusdam quisquam vitae magni ducimus porro tempore libero autem quod nisi nihil iste deserunt quaerat facere accusantium labore quasi laboriosam officia corrupti illum, amet repudiandae. Quia nihil accusamus, vero at laborum, corporis tempore porro quam beatae consequatur asperiores nobis quidem est modi ratione ea harum ut recusandae. Ipsum magni reiciendis earum similique? Esse corporis aspernatur ab voluptate velit quo, repellat labore illo accusantium. Autem beatae minima voluptas laboriosam eius, ducimus sint in voluptatibus possimus esse quasi, doloribus ratione aspernatur odit. Perferendis provident recusandae rerum autem facere laboriosam numquam possimus quisquam rem deserunt molestias aliquid nisi debitis accusamus voluptate laborum sint, et sequi tempore quasi atque nesciunt dignissimos excepturi ipsa. Quam?</p>
+           </article>
+           <article>
+                <h4>My Story</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum recusandae quibusdam quas officiis molestias adipisci ducimus voluptas vero voluptatum, error voluptatem minus soluta dolore repellat a aperiam nisi ab optio obcaecati delectus voluptates? Provident, veniam ducimus? Repudiandae eos exercitationem aliquam, ut fuga aliquid asperiores accusamus inventore reprehenderit, ea laborum minus ab in ipsum quae dolor ullam quos numquam? Eaque quod et nostrum. Ullam, ab accusamus? Animi laudantium nihil rem aliquam rerum reiciendis, excepturi cupiditate enim perferendis perspiciatis quasi laborum qui dolor eligendi amet facilis eaque minus odio neque! Voluptates nam non reiciendis! Repudiandae veritatis, ipsam magnam laboriosam ut modi eum eos aliquam nam ducimus? Aut deserunt quas id quasi aperiam debitis illum. Officiis voluptas libero tenetur inventore dolorum autem rem in ab mollitia voluptate ratione, sit animi, sint nisi, consequatur doloribus nostrum. Nostrum eos natus itaque eum, sapiente corrupti sunt veritatis quaerat incidunt enim odit similique nam ratione culpa blanditiis corporis eligendi placeat aut possimus. Neque ab similique ipsa totam. Obcaecati et impedit, magnam perspiciatis dignissimos quis esse reiciendis tenetur iste illum culpa ipsum nostrum, officia beatae voluptatum quod assumenda animi officiis consequuntur. Nulla, repellendus fuga error magni fugit consequatur totam deleniti saepe accusantium iste aliquid quis est. Sunt, error!</p>
+           </article>
+       </div>
     </section>
     <section class="section-4">
         <h2>Contact Me</h2>
